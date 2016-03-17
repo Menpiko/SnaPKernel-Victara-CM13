@@ -377,15 +377,24 @@ extern struct cpufreq_governor cpufreq_gov_conservative;
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_INTERACTIVE)
 extern struct cpufreq_governor cpufreq_gov_interactive;
 #define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_interactive)
-#elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_NIGHTMARE)
-extern struct cpufreq_governor cpufreq_gov_nightmare;
-#define CPUFREQ_DEFAULT_GOVERNOR (&cpufreq_gov_nightmare)
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_SMARTMAX)
 extern struct cpufreq_governor cpufreq_gov_smartmax;
 #define CPUFREQ_DEFAULT_GOVERNOR        (&cpufreq_gov_smartmax)
+#elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_IMPULSE)
+extern struct cpufreq_governor cpufreq_gov_impulse;
+#define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_impulse)
+#elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_INTELLIACTIVE)
+extern struct cpufreq_governor cpufreq_gov_intelliactive;
+#define CPUFREQ_DEFAULT_GOVERNOR        (&cpufreq_gov_intelliactive)
+#elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_INTELLIMM)
+extern struct cpufreq_governor cpufreq_gov_intellimm;
+#define CPUFREQ_DEFAULT_GOVERNOR        (&cpufreq_gov_intellimm)
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_SLIM)
 extern struct cpufreq_governor cpufreq_gov_slim;
 #define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_slim)
+#elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_NIGHTMARE)
+extern struct cpufreq_governor cpufreq_gov_nightmare;
+#define CPUFREQ_DEFAULT_GOVERNOR (&cpufreq_gov_nightmare)
 #endif
 
 /*********************************************************************
